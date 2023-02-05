@@ -20,7 +20,6 @@ def save_data_dict_and_html(data_dict:dict,html_code:str,save_dir='./saved_conte
         f.write(html_code)
     return files_save_dir
 
-
 def extract_text_from_url(url:str):
     resp = requests.get(url)
     if resp.status_code != 200:
